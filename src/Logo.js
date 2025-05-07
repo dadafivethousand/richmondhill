@@ -5,8 +5,8 @@ export default function Logo() {
   return (
     <div className="logo-container">
   
-      <span className="logo-title">Richmond Hill</span>
-
+      <span className="logo-title">Richmond <br></br> Hill</span>
+{/* 
       <div className="belt-wrapper">
       <div className="belt">
         <div className="belt-main"></div>
@@ -15,7 +15,7 @@ export default function Logo() {
         <div className="bar-tape bottom"></div>
       </div>
     </div>
-
+*/}
       <span className="logo-subtitle">Jiu-Jitsu</span>
       
   

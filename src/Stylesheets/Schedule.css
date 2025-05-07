@@ -1,0 +1,144 @@
+.day-column {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border-left: 1px solid rgba(0, 0, 0, 0.358);
+ 
+  }
+  
+  .Column {
+    flex: 1 1 0;
+    width: 100%; /* Mobile default to full width */
+    border-bottom: 1px solid black;
+  }
+  
+  .class-name {
+    font-size:9px;
+    font-family: Roboto condensed;
+    font-weight: 600;
+  }
+  
+  .class-time {
+    font-size:10px;
+    font-family: Roboto condensed;
+  }
+  
+  .ScheduleContainer {
+    
+    padding-top: 100px;
+  
+    margin-bottom:100px;
+    position: relative;
+   border-top:2px solid black;
+   
+    
+  }
+  
+  .ScheduleContainer h1 {
+    color: rgb(0, 0, 0);
+  }
+  
+  .Schedule {
+    
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .Monday{
+    border-left:none;
+  }
+  
+  .Saturday{
+    border-right:none
+  }
+  
+  .Schedule p {
+    line-height: 1.1;
+  }
+  
+  .WeekDay {
+    background-color: rgba(0, 0, 0, 0.733);
+    border: 1px solid #ccc;
+    color: white;
+   
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .WeekDay h3{
+    font-weight: 300;
+  }
+  
+   
+  .timeslot  {
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto condensed;
+    justify-content: center;
+   align-items: center;
+   background-color:  rgb(243, 239, 227);
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.119);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+    min-height: 35px;
+    line-height: 0px;
+     
+  }
+  
+  /* Mobile-first: Show short names by default */
+  .WeekDay .short-day-name {
+    display: block;
+    z-index: 22;
+  
+  }
+  
+  .WeekDay .full-day-name {
+    display: none;
+  }
+  
+  /* Enhancements for larger screens */
+  @media (min-width: 800px) {
+  
+   
+    .class-name {
+      font-size:12px
+    }
+    
+  
+  
+  .class-time {
+    font-size:12px;
+    font-family: Roboto condensed;
+  }
+  
+  .timeslot  {
+    font-size: 12px;
+  
+  }
+  
+    .Column {
+      width: 16%;
+    }
+  
+    .Schedule {
+      flex-direction: row; /* Switch to row layout on wider screens */
+      justify-content: space-evenly;
+      width:80%
+    }
+  
+    .WeekDay .short-day-name {
+      display: none; /* Hide short names on wide screens */
+    }
+  
+    .WeekDay .full-day-name {
+      display: block; /* Show full names on wide screens */
+    }
+  }
+  

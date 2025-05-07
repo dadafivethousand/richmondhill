@@ -1,0 +1,252 @@
+.coaches-container{
+ 
+    flex-wrap: wrap;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+     padding-top:50px;
+
+}
+
+
+.coach-belt{
+    margin-top:5px;
+    margin-bottom: 50px;
+}
+
+
+.coach-container{
+    margin-bottom:100px;
+    position: relative;
+     
+}
+
+.coach-container p{
+    font-family: roboto condensed;
+}
+
+.name-and-ig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+
+.coach-nm{
+    margin-right:10px
+}
+.image-overlay{
+    background:   linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+     height:400px;
+    width:320px;
+    position: absolute;
+    z-index: 2;
+ 
+ 
+}
+
+.left{
+    background:   linear-gradient(to left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0));
+     height:400px;
+    width:320px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 5px; 
+}
+
+.left p{
+    margin-right: 5px;
+}
+
+
+.half{
+    width: 60%;
+    font-family: roboto condensed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+
+.accomplishment{
+    font-size: 15px;
+}
+ 
+
+
+.half p{
+    
+    font-family: roboto condensed;
+    margin-bottom:20px;
+    margin-left:5px;
+    text-shadow: 0 0 4px white;
+}
+ 
+.coach-photo img{
+    margin:0 auto;
+   width:320px;
+    height:400px;
+    border-radius:10px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 7px 7px 8px black;
+    margin-bottom: 20px;
+ 
+   
+}
+
+.lineage{
+    margin-top:50px;
+    font-size: 12px;
+    text-align: center;
+    font-family: roboto consensed;
+}
+
+.lineage p{
+    margin-top:50px;
+    font-size: 8px;
+    text-align: center;
+    font-family: roboto consensed;
+}
+
+.artur img{
+    border-top-left-radius:10%;
+}
+ 
+ 
+.dim{
+    filter: brightness(25%);
+}
+
+
+.coach-name{
+    text-align: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform ease-in-out 0.2s;
+    font-weight:200;
+    font-family: Roboto condensed;
+    color:white;
+    font-size:1.5rem
+}
+
+ 
+            
+
+.name-and-bio{
+    position:absolute;
+    top:20px;
+    width:100%;
+    margin: 0 auto;   
+    padding:0 10px;
+    color:white;
+  
+}
+
+.coach-bio, .coach-accomplishments {
+    position: relative;
+    top:70px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform ease-in 0.2s;
+    font-family: Roboto condensed;
+    font-weight:200;
+}
+
+.coach-bio{
+    margin-bottom:20px
+}
+
+.coach-accomplishments p{
+    font-family: Roboto condensed;
+}
+
+.slide{
+    transform: translateY(0%);
+    opacity: 1;
+  
+}
+
+
+
+.coaches-intro h1{
+    margin-bottom:20px;
+    width: 98vw;;
+}
+
+.coaches-intro p{
+    
+    opacity: 80%;
+    width:90%;
+    margin: 0 auto;
+    margin-bottom:30px;
+}
+
+.coach-description{
+    width:350px;
+    margin: 0 auto;
+    font-family: roboto;
+    margin-top:10px;
+    border-left:2px solid black;
+    padding-left:6px;
+}
+
+.green-circle{
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right:10px;
+    border: 1px solid black;
+}
+
+.privates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.privates-text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.click-to-book{
+    font-style: italic;
+    font-size: 17px;
+    text-decoration: underline;
+    font-family: Roboto condensed;
+}
+
+
+@media(min-width:800px){
+    .coaches{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width:98vw;
+      
+    }
+    .coaches >*{
+       margin: 50px;
+    }
+    .coach-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+    }
+    .coach-description{
+        width:40%;
+        margin: 50px ;
+ 
+    }
+}
