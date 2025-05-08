@@ -3,7 +3,7 @@
     position:fixed;
     top:0px;
     width:100vw;
-    height:108px;
+    height:70px;
     background-color:  white;
     z-index:30;
     
@@ -121,7 +121,9 @@
       height:100px
   }
    
-  
+  .navbar-outer-container{
+    border-bottom: 1px solid rgb(196, 0, 0);
+}
   
   @media(min-width:800px){
   
