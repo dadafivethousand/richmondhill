@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 // import GetStarted from "./Components/GetStarted";
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+ import { faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 export default function Navbar() {
     const [click, setClick] = useState(false);
     const [showGetStarted, setShowGetStarted] = useState(false);
@@ -55,6 +60,12 @@ export default function Navbar() {
 
     return(
         <div className="navbar-outer-container">
+            <div className="navbar-top-row">
+            <FontAwesomeIcon icon={faEnvelope} /> info@rhbjj.com<br></br>
+               <FontAwesomeIcon icon={faPhone} /> (647) 887-9940 <br></br>
+               <FontAwesomeIcon className='ig-icon' icon={faInstagram} />@rhbjj <br></br>
+            
+            </div>
              <div className="hamburger" onClick={handleClick}> {click ?  <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}  </div>
         <div className="navbar-container">
            {/*     <div className="navbar-image-container">

@@ -1,0 +1,168 @@
+.form-outer-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.401);
+    position: fixed  ;
+    z-index: 80;
+   
+}
+
+.form-container{
+    position: absolute;
+  border: 2px solid black;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:80vh;
+    width:70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 40;
+    border-radius: 20px;
+ }
+
+ .message-container{
+    width:90%;
+ }
+
+ .message-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+ }
+
+ #message-title{
+ 
+    font-size: 20px;
+ }
+
+
+ .message-body{
+    font-size: 14px;
+    margin-bottom: 50px;
+    text-align: left;
+ }
+
+ .top{
+    margin-bottom: 25px;
+
+ }
+
+ .captcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ 
+    position: relative;
+}
+
+.captcha {
+    transform: scale(0.7); /* Adjust the scale as needed */
+    transform-origin: center; /* Center the scaling */
+    width: 304px; /* Default width of reCAPTCHA iframe */
+    height: 78px; /* Default height of reCAPTCHA iframe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .form-container form{
+   width: 60vw;
+ }
+
+ 
+
+.form-group input{
+    height:40px;
+    width:100%;
+    text-align: center; /* Center the placeholder text horizontally */
+    margin-bottom:2px
+}
+
+.close-form{
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size: 30px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: poppins;
+}
+
+
+.large-pic {
+    height: 120px;
+    display: block;
+}
+
+.small-pic {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:-20px;
+}
+
+
+.form-container button{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height:30px;    
+    font-family: roboto;;
+ 
+}
+
+
+#success-message-image{
+    margin-top:50px
+}
+
+.form-container a{
+text-decoration: underline;
+}
+ 
+
+
+
+.valid-button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    border: 1px solid white;
+
+}
+
+.no-shadow{
+     box-shadow: 3px 3px 5px black;
+}
+
+.center{
+    text-align:center
+}
+
+
+@media(min-width:800px){
+    .form-container{
+        width:50vw;
+    }
+
+    .form-container form{
+        width: 40vw;
+      }
+     
+
+}

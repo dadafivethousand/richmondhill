@@ -9,13 +9,16 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import About from './About';
 import Landing from './Landing'
-
+import { useAppContext } from "./AppContext";
+import LeadForm from './Components/LeadForm';
 
 function App() {
+  const { showFreeTrialForm  } = useAppContext();
   return (
     <div className="App">
       <div>
 
+{showFreeTrialForm && <LeadForm closebutton={true}/>}
 <Navbar />
 <Landing />
 <About />

@@ -1,5 +1,6 @@
 import './Stylesheets/Landing.css';
-import video from "../src/Media/Adobe1_compressed.mp4";
+import video from "../src/Media/Adobe1_trimmed.mp4";
+import GetStarted from './Components/GetStarted';
 
 export default function Landing() {
   return (
@@ -9,8 +10,11 @@ export default function Landing() {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         <div className="content">
-          <h1>Your Content Here</h1>
+    
+          <h2>A journey begins with a single step</h2>
+          <GetStarted />
         </div>
       </div>
     </div>

@@ -3,9 +3,16 @@
     position:fixed;
     top:0px;
     width:100vw;
-    height:70px;
-    background-color:  white;
+    height:108px;
+    background-color: white;
+    background-image: url(../Media/richmond-hill-jiu-jitsu-high-resolution-logo\ \(2\).png);
+    background-size: 98px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     z-index:30;
+ 
+ 
+ 
     
   }
   
@@ -108,9 +115,10 @@
       position: absolute;
       right:30px;
       font-size: 25px;
-     top:25px;
+   bottom:30px;
       width:fit-content;
-      z-index:5
+      z-index:5;
+   color: rgba(0, 0, 0, 0.477);
   }
   
   .hamburger:hover{
@@ -118,12 +126,31 @@
   }
   
   .navbar-container{
-      height:100px
+      height:70px
   }
    
   .navbar-outer-container{
     border-bottom: 1px solid rgb(196, 0, 0);
 }
+
+.navbar-top-row{
+     text-align:left;
+    padding:2px;
+    color: rgba(0, 0, 0, 0.477);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    position: relative;
+    top:30px;
+    left: 5px;
+}
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../assets/Fonts/Ethnocentric Rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
   
   @media(min-width:800px){
   
@@ -154,7 +181,7 @@
       .navbar-container{
    display:flex;
    justify-content: space-between;
-   height: 100px;
+ 
    width:95%;
    margin: 0 auto;
   

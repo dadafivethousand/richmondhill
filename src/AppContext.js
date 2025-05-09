@@ -15,46 +15,16 @@ export const AppProvider = ({ children }) => {
   };
 
   // State to control form visibility
-  const [showForm, setShowForm] = useState(() => getInitialState("showForm", false));
-  const [showKidForm, setShowKidForm] = useState(() => getInitialState("showKidForm", false));
-  const [showAdult, setShowAdult] = useState(() => getInitialState("showAdult", false));
-  const [showKid, setShowKid] = useState(() => getInitialState("showKid", false));
-  const [showPrivate, setShowPrivate] = useState(() => getInitialState("showPrivate", false));
-  const [showPizduq, setShowPizduq] = useState(() => getInitialState("showPizduq", false));
-  const [showPurchase, setShowPurchase] = useState(() => getInitialState("showPurchase", false));
-
+  const [showFreeTrialForm, setShowFreeTrialForm] = useState(() => getInitialState("showFreeTrialForm", false));
+   
   // Save states to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem("showForm", JSON.stringify(showForm));
-  }, [showForm]);
-
-  useEffect(() => {
-    localStorage.setItem("showPurchase", JSON.stringify(showPurchase));
-  }, [showPurchase]);
-
-  useEffect(() => {
-    localStorage.setItem("showKidForm", JSON.stringify(showKidForm));
-  }, [showKidForm]);
-
-
-  useEffect(() => {
-    localStorage.setItem("showAdult", JSON.stringify(showAdult));
-  }, [showAdult]);
-
-  useEffect(() => {
-    localStorage.setItem("showKid", JSON.stringify(showKid));
-  }, [showKid]);
-
-  useEffect(() => {
-    localStorage.setItem("showPrivate", JSON.stringify(showPrivate));
-  }, [showPrivate]);
-
-  useEffect(() => {
-    localStorage.setItem("showPizduq", JSON.stringify(showPizduq));
-  }, [showPizduq]);
+    localStorage.setItem("showFreeTrialForm", JSON.stringify(showFreeTrialForm));
+  }, [showFreeTrialForm]);
+ 
 
   return (
-    <AppContext.Provider value={{ showForm, showPurchase, setShowPurchase, showPizduq, setShowPizduq, setShowForm, showKidForm, setShowKidForm, showAdult, setShowAdult, showKid, setShowKid, showPrivate, setShowPrivate }}>
+    <AppContext.Provider value={{ showFreeTrialForm, setShowFreeTrialForm }}>
       {children}
     </AppContext.Provider>
   );
