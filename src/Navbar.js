@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react"
 import './Stylesheets/Navbar.css'
- 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 // import GetStarted from "./Components/GetStarted";
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
  import { faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
