@@ -12,7 +12,7 @@ export default function Landing() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setPoster(width < 1000 ? landscapePoster : rotated); // tweak 768px threshold as needed
+      setPoster(width < 1000 ? rotated : landscapePoster); // tweak 768px threshold as needed
     };
 
     handleResize(); // run on mount
