@@ -44,7 +44,7 @@ export default function Contact() {
         <div className='Address animate'>
         <FontAwesomeIcon icon={faHome} /> {/* House icon */}
         <span id='ContactText'>132 King Rd <br></br>
-        <span id='ContactText' className='Indent'>Richmond Hill, ON L6E 2T5 </span> </span>  
+        <span id='ContactText' className='Indent'>Richmond Hill, <br></br>ON, L6E 2T5 </span> </span>  
              
         </div>
       
