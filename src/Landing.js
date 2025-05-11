@@ -31,7 +31,7 @@ export default function Landing() {
           loop
           playsInline
           className="scaled-video"
-          poster={poster}
+          poster={rotated}
         >
           <source src={video} type="video/mp4" />
           <source src={webmvideo} type="video/webm" />
