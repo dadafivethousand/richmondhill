@@ -12,7 +12,7 @@ export default function Landing() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setPoster(width < 1000 ? portraitPoster : rotated); // tweak 768px threshold as needed
+      setPoster(width < 1000 ? landscapePoster : rotated); // tweak 768px threshold as needed
     };
 
     handleResize(); // run on mount
@@ -31,7 +31,7 @@ export default function Landing() {
           loop
           playsInline
           className="scaled-video"
-          poster={rotated}
+          poster={poster}
         >
           <source src={video} type="video/mp4" />
           <source src={webmvideo} type="video/webm" />
