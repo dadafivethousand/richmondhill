@@ -13,8 +13,10 @@
     margin-bottom: 30px;
     
 }
-.ig-icon{
-    margin-right: 4px;
+ 
+.instagram-icon{
+ 
+      margin-right: 4px;
 }
 
 .Instagram{
@@ -72,10 +74,15 @@ margin-bottom:20px;
  
 }
 
+.instagram-icon{
+     color:rgba(0, 0, 0, 0.772)
+}
+
 .Phone, .Email, .Address {
   
-    margin : 20px 0;
+    margin : 10px 0;
     width:100%;
+    color:rgba(0, 0, 0, 0.772)
 }
 
 .Indent{
@@ -93,6 +100,8 @@ margin-bottom:20px;
  
 #ContactText{
     font-size: 17px; 
+    font-family: roboto condensed;
+    color: rgba(0, 0, 0, 0.659) 
 }
 
 .Map{

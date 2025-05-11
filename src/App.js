@@ -21,8 +21,7 @@ function App() {
 {showFreeTrialForm && <LeadForm closebutton={true}/>}
 <Navbar />
 <Landing />
-<About />
-<Coaches />
+ <Coaches />
 <Schedule />
 <FAQ />
 <Contact />

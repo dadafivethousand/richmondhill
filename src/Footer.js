@@ -1,5 +1,5 @@
 import './Stylesheets/Footer.css'
- 
+import logo from './Media/logo-grayscale-inverted.png'
 
 export default function Footer(){
     return(
@@ -8,7 +8,6 @@ export default function Footer(){
             <ul>
             <a href='#Schedule' >  <li>  Schedule  </li></a>
             <a href='#About'> <li>   About </li></a>
-    
             <a href='#Coaches' >   <li>  Coaches  </li></a>
             <a  href='#programs'>  <li>  Programs  </li></a>
             </ul>
@@ -19,6 +18,7 @@ export default function Footer(){
          <a  href='blog'>   <li>  Blog  </li></a>
             <a  href='#Contact'>   <li>  Contact Us  </li></a>
             </ul>
+            <img src={logo} />
             </div>
             {/*
             <hr></hr>

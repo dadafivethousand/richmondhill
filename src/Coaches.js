@@ -8,8 +8,9 @@ export default function Coaches() {
       
             
        <div className="coaches-intro">
-       <h1 > Coaches </h1>
-       <p>  At Maple BJJ, our coaches bring years of experience in both grappling and striking, ensuring top-tier instruction for all skill levels. With backgrounds in Brazilian Jiu-Jitsu, wrestling, Muay Thai, and MMA, they’ve competed at the highest levels and are dedicated to helping you reach your goals—whether it’s self-defense, competition, or just getting in great shape. Train with the best and take your skills to the next level!  </p>
+       <h1 > About </h1>
+
+       <p className="roboto-condensed">  At Richmond Hill BJJ, our mission is to bring elite-level Brazilian Jiu-Jitsu and MMA training to the heart of Richmond Hill. Whether you're a complete beginner or an experienced competitor, our programs are designed to help you reach your highest potential in a supportive, disciplined, and high-performance environment. Led by accomplished coaches with real competition and fight experience, we are proud to offer world-class instruction. </p>
        </div>
        <div className="coaches">
             {

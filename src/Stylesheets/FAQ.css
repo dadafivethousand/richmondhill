@@ -86,12 +86,12 @@
   }
 
   .faq-answer {
-    width:98%;
+    width:94%;
     margin:0 auto;
     font-weight: 200;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.872);
-    color: white;
+    color: rgba(255, 255, 255, 0.696);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-right: 0.5px solid rgb(255, 255, 255);
@@ -108,7 +108,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
-    color: white;
+    color: rgba(255, 255, 255, 0.705);
     padding: 10px;
   }
   
@@ -138,7 +138,7 @@
     background-color: #05050500;
     border: none;
     font-size: 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.737);
     z-index: 40;
   }
   

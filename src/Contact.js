@@ -29,9 +29,9 @@ export default function Contact() {
       rel="noopener noreferrer"
       aria-label="Visit our Instagram"
     >
-        <FontAwesomeIcon className='ig-icon' icon={faInstagram} />{/* Envelope icon */}
+        <FontAwesomeIcon className='instagram-icon' icon={faInstagram} />{/* Envelope icon */}
         </a>
-        <span id='ContactText'> @richmondhillbjj1</span>
+        <span id='ContactText'> @rhbjj</span>
         </div>
         <div className='Phone animate'>
         <FontAwesomeIcon icon={faPhone} />  {/* Phone icon */}
@@ -39,7 +39,7 @@ export default function Contact() {
         </div>
         <div className='Email animate'>
         <FontAwesomeIcon icon={faEnvelope} />{/* Envelope icon */}
-        <span id='ContactText'> admin@maplebjj.com</span>
+        <span id='ContactText'> admin@rhbjj.com</span>
         </div>
         <div className='Address animate'>
         <FontAwesomeIcon icon={faHome} /> {/* House icon */}

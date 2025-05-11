@@ -60,20 +60,26 @@ export default function Navbar() {
 
     return(
         <div className="navbar-outer-container">
+        <div className="navbar-container">
             <div className="navbar-top-row">
-            <FontAwesomeIcon icon={faEnvelope} /> info@rhbjj.com<br></br>
-               <FontAwesomeIcon icon={faPhone} /> (647) 887-9940 <br></br>
-               <FontAwesomeIcon className='ig-icon' icon={faInstagram} />@rhbjj <br></br>
+              
+             <FontAwesomeIcon className='ig-icon' icon={faInstagram}/>@rhbjj  
+                 <FontAwesomeIcon icon={faEnvelope} />  info@rhbjj.com 
+    
+                <FontAwesomeIcon icon={faPhone} />  (647) 887-9940  
+               <FontAwesomeIcon icon={faHome} />  132 King Road 
+     
             
             </div>
+                   
              <div className="hamburger" onClick={handleClick}> {click ?  <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}  </div>
-        <div className="navbar-container">
-           {/*     <div className="navbar-image-container">
+           
+      
 
-            <img className={`top-logo ${animateLogo? "move-logo": ''}`}  src={toplogo} />
-            <img className={`bottom-logo ${animateBottomLogo? "move-logo": ''}`} src={bottomlogo} />
+             
 
-            </div>*/}
+        </div>
+        
             <div className={`navbar ${click? 'slide': ''}`}>
              {/*   <div   className={`${showGetStarted?'show-get-started': ''} getstarted`}>
              <GetStarted /> }
@@ -96,7 +102,9 @@ export default function Navbar() {
              
             </ul>
             </div>
-            </div>
+     
+
+
 
         </div>
     )

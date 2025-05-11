@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useAppContext } from "../AppContext";
-import pic from '../Media/maxim.jpg'
+import pic from '../Media/richmond-hill-jiu-jitsu-high-resolution-logo (2).png'
 export default function LeadForm( {closebutton} ) {
   const { setShowFreeTrialForm } = useAppContext();
   const [captchaVerified, setCaptchaVerified] = useState(false);

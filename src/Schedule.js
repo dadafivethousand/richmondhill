@@ -25,7 +25,7 @@ const convertToAmPm = (time) => {
 // Time blocks to remove (example: between 9-11 AM and 1:30-3:30 PM)
 const timeBlocksToRemove = [
   { start: 8.5, end: 10.5 },
-  { start: 15, end: 16.75 }
+  { start: 14, end: 17.75 }
 ];
 
 // Main Schedule component
@@ -36,7 +36,7 @@ export default function Schedule() {
 
   // This useEffect will calculate the earliest and latest times when the component mounts
   useEffect(() => {
-    let minStartTime = 8;
+    let minStartTime = 9;
     let maxEndTime = 0;
     let removedHeight = 0;
 

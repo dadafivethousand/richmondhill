@@ -34,7 +34,7 @@
 }
 
 .FooterContainer img{
-    height:70px
+    height:100px
 }
 
 .FooterContainer h5{
@@ -45,7 +45,7 @@
 }
 
 .FooterContainer a{
-    color:white;
+    color:rgba(255, 255, 255, 0.589);
     text-decoration: none;
     font-family: Roboto condensed;
 }

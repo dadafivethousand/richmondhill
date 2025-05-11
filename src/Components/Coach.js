@@ -29,7 +29,7 @@ export default function Coach({ coach }){
              href={coach.link}
             target="_blank"
                 rel="noopener noreferrer"
-             aria-label="Visit Instagram">   <FontAwesomeIcon className='ig-icon' icon={faInstagram} /> 
+             aria-label="Visit Instagram">   <FontAwesomeIcon className='coach-ig-icon' icon={faInstagram} /> 
              </a> : null}
          
             </div>
@@ -37,7 +37,7 @@ export default function Coach({ coach }){
  
             </div>
             <div className='coach-description'>
-               {coach.description}
+             <p className='roboto-condensed'>  {coach.description}</p>
 
 {/* 
                {coach.headinstructor? 
