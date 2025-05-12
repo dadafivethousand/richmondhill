@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.rh-discount-page {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #f0f6fc 0%, #ffffff 100%);
+  color: #1e2b3a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rh-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #1f2d40;
+  font-weight: 600;
+  font-family: "Anton";
+}
+
+.rh-header p {
+  font-size: 1.05rem;
+  color: #4b5a6a;
+
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.rh-discount-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rh-card {
+  background: #ffffff;
+  border: 1px solid #dbe4ec;
+  border-radius: 16px;
+  width: 300px;
+  padding: 20px 25px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.rh-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rh-card h3 {
+  font-size: 1.5rem;
+  color: #1a2b44;
+  margin-bottom: 20px;
+}
+
+.price-section {
+  margin-bottom: 20px;
+}
+
+.price-section .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #204e7a;
+  margin-bottom: 4px;
+}
+
+.price-section span {
+  font-size: 0.9rem;
+  color: #5e6b78;
+}
+
+#price{
+    color:#204e7a;
+    font-size:1.8rem
+}
+
+.rh-button {
+  padding: 10px 24px;
+  background-color: #326fa8;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+}
+
+.rh-button:hover {
+  background-color: #1d4a73;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.rh-footer-note {
+  margin-top: 50px;
+  font-size: 0.95rem;
+  color: #5d6a75;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .rh-card {
+    width: 100%;
+  }
+
+  .rh-button {
+    width: 80%;
+  }
+}
+
+
+#small{
+    font-size: 12px;
+    text-align: left;
+      margin-bottom: 40px;
+       
+}
