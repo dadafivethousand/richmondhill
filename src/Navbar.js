@@ -60,15 +60,27 @@ export default function Navbar() {
         <div className="navbar-outer-container">
         <div className="navbar-container">
             <div className="navbar-top-row">
-              
-             <FontAwesomeIcon className='ig-icon' icon={faInstagram}/>@rhbjj  
-                 <FontAwesomeIcon icon={faEnvelope} />  info@rhbjj.com 
-    
-                <FontAwesomeIcon icon={faPhone} />  (647) 887-9940  
-               <FontAwesomeIcon icon={faHome} />  132 King Road 
-     
-            
-            </div>
+  <a href="https://instagram.com/rhbjj" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon className="ig-icon" icon={faInstagram} /> @rhbjj
+  </a>
+
+  <a href="mailto:info@rhbjj.com">
+    <FontAwesomeIcon icon={faEnvelope} /> info@rhbjj.com
+  </a>
+
+  <a href="tel:+16478879940">
+    <FontAwesomeIcon icon={faPhone} /> (647) 887-9940
+  </a>
+
+  <a
+    href="https://www.google.com/maps/dir/?api=1&destination=132+King+Rd,+Richmond+Hill,+ON"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FontAwesomeIcon icon={faHome} /> 132 King Road
+  </a>
+</div>
+
                    
              <div className="hamburger" onClick={handleClick}> {click ?  <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}  </div>
            
