@@ -1,7 +1,7 @@
 
 .navbar-outer-container{
     position:fixed;
-      background-color: white;
+      background-color: rgb(172, 238, 239);
         height:108px;
            width:100vw;
            z-index:30;
@@ -14,14 +14,14 @@
     top:0px;
     width:100vw;
     height:108px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 231, 231);
     background-image: url(../Media/png/logo-no-background.png);
-    background-size: 270px;
+    background-size: 190px;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom left 10px;
     z-index:30;
     display: flex;   
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: space-around;
    }
 
@@ -73,7 +73,7 @@
  
    
   .navbar{
-      background-color:  white;
+      background-color: rgb(199, 197, 197);
       transform: translateX(-200%);
    z-index:-1;
       transition: ease-in .5s transform;
@@ -105,7 +105,7 @@
       list-style: none;;
       text-align: center;
     
-      background-color:  white;
+      background-color: rgb(199, 197, 197);
   }
   .navbar-options li{
       padding: 10px;
@@ -141,7 +141,7 @@
     padding:2px;
     color: rgba(0, 0, 0, 0.477);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
    display:flex;
    flex-direction: column;
     width:95px; 
@@ -149,6 +149,8 @@
       height:70px;
       z-index: 31;
       margin:10px;
+      align-self: flex-end;
+      opacity: 0; 
  }
 
 .FontAwesomeIcon{
