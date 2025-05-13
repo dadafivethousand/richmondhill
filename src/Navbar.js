@@ -59,7 +59,7 @@ export default function Navbar() {
     return(
         <div className="navbar-outer-container">
         <div className="navbar-container">
-            <div className="navbar-top-row">
+     {/*      <div className="navbar-top-row">
   <a href="https://instagram.com/rhbjj" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon className="ig-icon" icon={faInstagram} /> @rhbjj
   </a>
@@ -79,7 +79,7 @@ export default function Navbar() {
   >
     <FontAwesomeIcon icon={faHome} /> 132 King Road
   </a>
-</div>
+</div> */} 
 
                    
              <div className="hamburger" onClick={handleClick}> {click ?  <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}  </div>

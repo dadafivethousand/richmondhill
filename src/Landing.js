@@ -3,8 +3,8 @@ import video from "../src/Media/final.mp4";
 import webmvideo from "../src/Media/output.webm";
 import React, { useState, useEffect } from "react";
 import GetStarted from './Components/GetStarted';
-import landscapePoster from "./Media/richmond-hill-jiu-jitsu-high-resolution-logo (2).png"
-import rotated from "./Media/rotated.png"
+import landscapePoster from "./Media/png/logo-no-background.png"
+import rotated from "./Media/png/logo-no-background.png"
 
 export default function Landing() {
   const [poster, setPoster] = useState(landscapePoster);
