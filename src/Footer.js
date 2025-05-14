@@ -1,5 +1,5 @@
 import './Stylesheets/Footer.css'
-import logo from './Media/logo-grayscale-inverted.png'
+import logo from './Media/png/logo-grayscale-inverted.png.png'
 
 export default function Footer(){
     return(

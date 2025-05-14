@@ -71,7 +71,7 @@ export default function Navbar() {
   <a href="tel:+16478879940">
     <FontAwesomeIcon icon={faPhone} /> (647) 887-9940
   </a>
-
+{/*
   <a
     href="https://www.google.com/maps/dir/?api=1&destination=132+King+Rd,+Richmond+Hill,+ON"
     target="_blank"
@@ -79,6 +79,7 @@ export default function Navbar() {
   >
     <FontAwesomeIcon icon={faHome} /> 132 King Road
   </a>
+   */}
 </div>  
 
                    
