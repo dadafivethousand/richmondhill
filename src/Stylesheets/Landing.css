@@ -115,7 +115,15 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    top:0px
+    top:0px;
+    background-image: url('../Media/DSC_7821.JPG');
+    background-size: 100vw;
+      background-position: center ;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+     
+
+
  
   }
   
@@ -134,7 +142,7 @@
     z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 40vh;
+    padding-top: 20vh;
     display:flex;
     font-family: roboto;
     flex-direction: column;

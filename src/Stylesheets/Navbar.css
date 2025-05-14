@@ -21,14 +21,14 @@
     background-position: bottom left 10px;
     z-index:30;
     display: flex;   
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: space-around;
    }
 
 
 
   .navbar-outer-container a{
-      color:rgba(0, 0, 0, 0.537);
+      color:rgba(0, 0, 0, 0.808);
       text-decoration: none;
       font-weight:500; margin-bottom: 5px;;}
   
@@ -143,20 +143,32 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
    display:flex;
-    width:95px; 
+   align-items: flex-start;
       white-space: nowrap;
-      height:70px;
+ 
       z-index: 31;
       margin:10px;
+      position: absolute;
+      left: 100px;
+ 
+    
   
  }
 
+
+.navbar-top-row a{
+display: flex;
+ }
+
+
+ 
 .FontAwesomeIcon{
     font-size: 16px;
+  
 }
 
 .ig-icon{
-    font-size:14px
+    font-size:12px
 }
 
 @font-face {

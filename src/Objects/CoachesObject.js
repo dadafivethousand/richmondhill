@@ -15,7 +15,7 @@ const CoachesList =
 
 {
   name: "SivaRooban",
- description: "Siva is a dedicated Brazilian Jiu-Jitsu practitioner with 10 year sof experience. He has medaled in international competitions such as the IBJJF Chicago Open, Grappling Industries New York, and the IBJJF Toronto Open. In 2025 he earned a gold medal at Grappling Industries Toronto in the Gi division and a silver medal in No-Gi. His background also includes three years of Judo, where he achieved podium finishes at the Hatashita and Torra Opens, and wrestling experience with the Ryerson University wrestling team.",
+ description: "Siva is a dedicated Brazilian Jiu-Jitsu practitioner with 10 years of experience. He has medaled in international competitions such as the IBJJF Chicago Open, Grappling Industries New York, and the IBJJF Toronto Open. In 2025 he earned a gold medal at Grappling Industries Toronto in the Gi division and a silver medal in No-Gi. His background also includes three years of Judo, where he achieved podium finishes at the Hatashita and Torra Opens, and wrestling experience with the Ryerson University wrestling team.",
   accomplishments:["30+ Years of Wrestling",  "Donetsk Regional Champion", "Greco-Roman Wrestling Master of Sport (Ukraine)", " Head Coach of Thailand's National Wrestling Team" ,"Cadets Competition Winner", "United World Wrestling Certified Coach"],
   image:SivaImage,
   link: 'https://www.instagram.com/sivamarkandu/',

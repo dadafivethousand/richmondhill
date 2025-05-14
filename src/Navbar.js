@@ -60,14 +60,14 @@ export default function Navbar() {
         <div className="navbar-outer-container">
         <div className="navbar-container">
        <div className="navbar-top-row">
-  <a href="https://instagram.com/rhbjj" target="_blank" rel="noopener noreferrer">
+ {/* <a href="https://instagram.com/rhbjj" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon className="ig-icon" icon={faInstagram} /> @rhbjj
   </a>
 
   <a href="mailto:info@rhbjj.com">
     <FontAwesomeIcon icon={faEnvelope} /> info@rhbjj.com
   </a>
-
+ */}
   <a href="tel:+16478879940">
     <FontAwesomeIcon icon={faPhone} /> (647) 887-9940
   </a>

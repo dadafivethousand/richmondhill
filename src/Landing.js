@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GetStarted from './Components/GetStarted';
 import landscapePoster from "./Media/png/logo-no-background.png"
 import rotated from "./Media/png/logo-no-background.png"
+import landingImage from "./Media/DSC_7821.JPG"
 
 export default function Landing() {
   const [poster, setPoster] = useState(landscapePoster);
@@ -25,23 +26,12 @@ export default function Landing() {
   return (
     <div className="landing-container">
       <div className="video-background">
-      <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="scaled-video"
-          poster={poster}
-        >
-          <source src={video} type="video/mp4" />
-          <source src={webmvideo} type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
+ 
 
 
         <div className="content">
     
-          <h2>A journey begins with a single step</h2>
+ 
           <GetStarted />
         </div>
       </div>
