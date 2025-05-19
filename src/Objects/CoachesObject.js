@@ -1,5 +1,5 @@
 import MaxImage from '../Media/maxim.jpg'
-import SivaImage from "../Media/siva.jpeg"
+import SivaImage from "../Media/IMG-20250515-WA0006.jpg"
  
 const CoachesList = 
 [
