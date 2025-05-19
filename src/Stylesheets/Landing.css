@@ -2,7 +2,7 @@
 
 .landing-container {
     position: relative;
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
     overflow: hidden;
     padding-top: 70px;;
@@ -111,16 +111,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* or whatever height you want */
+    height: 100%; /* or whatever height you want */
     width: 100%;
     overflow: hidden;
     position: relative;
     top:0px;
-    background-image: url('../Media/DSC_7821.JPG');
-    background-size: 100vw;
+    background-image: url('../Media/dojo.png');
+    background-size: cover;
       background-position: center ;
           background-attachment: fixed;
           background-repeat: no-repeat;
+          background-color: red;
      
 
 
@@ -142,11 +143,11 @@
     z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 20vh;
-    display:flex;
+     display:flex;
     font-family: roboto;
     flex-direction: column;
     justify-content: center;
+  
   }
   
 
