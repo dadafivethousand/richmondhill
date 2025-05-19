@@ -29,9 +29,9 @@
   border: 1px solid #d7d7d7;
   border-radius: 14px;
   padding: 40px 30px;
-  width: 75%;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width:40%
 }
 
 .pricing-card:hover {
@@ -95,6 +95,7 @@
    left:50%;
    transform: translateX(-50%);
    bottom: -10px;
+    white-space: nowrap;
 }
 
 .pay-btn:hover {
@@ -127,4 +128,13 @@
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+@media(max-width:800px){
+.pricing-card {
+ 
+  width: 75%;
+ 
+}
 }
