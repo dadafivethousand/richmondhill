@@ -4,7 +4,7 @@ import StickerBadge from "./Components/StickerBadge";
 
 export default function GrandOpeningPricing() {
   return (
-    <div className="pricing-container">
+    <div id="Pricing" className="pricing-container">
      
           <StickerBadge />
       <div className="pricing-sections">

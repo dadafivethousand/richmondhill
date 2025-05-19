@@ -8,6 +8,7 @@ export default function Footer(){
             <ul>
             <a href='#Schedule' >  <li>  Schedule  </li></a>
             <a href='#About'> <li>   About </li></a>
+             <a href='#Pricing'> <li>   Pricing </li></a>
   
             </ul>
             <ul>

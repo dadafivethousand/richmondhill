@@ -3,7 +3,7 @@ import "../Stylesheets/StickerBadge.css";
 
 export default function StickerBadge() {
   return (
-    <div className="sticker-wrapper">
+    <div id="pricing" className="sticker-wrapper">
       <div className="sticker-content">
 <div className="sticker-title">
   <span className="sticker-party">🎉</span> Grand Opening <br />Pricing
