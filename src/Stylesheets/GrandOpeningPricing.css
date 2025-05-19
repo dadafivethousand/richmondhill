@@ -1,0 +1,128 @@
+.pricing-container {
+  padding: 100px 0px;
+  background: #ffffff;
+  color: #111;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+ 
+
+.pricing-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+
+  font-weight: 300;
+  width:90%;
+  margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.pricing-sections {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.pricing-card {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 40px 30px;
+  width: 340px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.price-tier {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.price-tier:hover {
+  border-color: #ccc;
+  background: #fcfcfc;
+}
+
+.duration {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000;
+}
+
+.access {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.pay-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.pay-btn:hover {
+  background: #333;
+}
+
+.start-trial-button {
+  margin-top: 60px;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-trial-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.disclaimer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

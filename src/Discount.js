@@ -5,7 +5,7 @@ export default function Discount() {
   return (
     <div className="rh-discount-page">
       <header className="rh-header">
-        <h2>Exclusive Offer</h2>
+        <h2>Grand Opening Special</h2>
         <p>
           Exclusive pricing only for Volk members!<br />
         </p>

@@ -13,6 +13,7 @@ import { useAppContext } from "./AppContext";
 import LeadForm from './Components/LeadForm';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Discount from './Discount';
+import GrandOpeningPricing from './GrandOpeningPricing';
  
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
 <Landing />
  <Coaches />
 <Schedule />
+<GrandOpeningPricing />
 <FAQ />
 <Contact />
 <Footer />

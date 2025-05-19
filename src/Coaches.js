@@ -10,7 +10,7 @@ export default function Coaches() {
        <div className="coaches-intro">
        <h1 > About </h1>
 
-       <p className="roboto-condensed">  At Richmond Hill BJJ, our mission is to bring elite-level Brazilian Jiu-Jitsu and MMA training to the heart of Richmond Hill. Whether you're a complete beginner or an experienced competitor, our programs are designed to help you reach your highest potential in a supportive, disciplined, and high-performance environment. Led by accomplished coaches with real competition and fight experience, we are proud to offer world-class instruction.  </p>
+       <p className="roboto-condensed into-paragraph">  At Richmond Hill BJJ, our mission is to bring elite-level Brazilian Jiu-Jitsu and MMA training to the heart of Richmond Hill. Whether you're a complete beginner or an experienced competitor, our programs are designed to help you reach your highest potential in a supportive, disciplined, and high-performance environment. Led by accomplished coaches with real competition and fight experience, we are proud to offer world-class instruction.  </p>
        </div>
        <div className="coaches">
             {
