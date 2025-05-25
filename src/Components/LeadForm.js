@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useAppContext } from "../AppContext";
-import pic from '../Media/richmond-hill-jiu-jitsu-high-resolution-logo (2).png'
+import pic from '../Media/png/logo-no-background.png'
 export default function LeadForm( {closebutton} ) {
   const { setShowFreeTrialForm } = useAppContext();
   const [captchaVerified, setCaptchaVerified] = useState(false);
@@ -80,7 +80,7 @@ export default function LeadForm( {closebutton} ) {
     if (!isValid) return; // Prevent submission if form is not valid
     console.log('sending request to worker')
     try {
-      const response = await fetch('https://worker-consolidated.maxli5004.workers.dev/intake-form', {
+      const response = await fetch('https://richmondhill-worker.maxli5004.workers.dev/intake-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

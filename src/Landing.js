@@ -26,12 +26,7 @@ export default function Landing() {
   return (
     <div className="landing-container">
       <div className="video-background">
- 
-
-
         <div className="content">
-    
- 
           <GetStarted />
         </div>
       </div>

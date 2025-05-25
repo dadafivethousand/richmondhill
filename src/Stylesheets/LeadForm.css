@@ -4,7 +4,6 @@
     background-color: rgba(0, 0, 0, 0.401);
     position: fixed  ;
     z-index: 80;
-   
 }
 
 .form-container{
@@ -22,28 +21,27 @@
     background-color: white;
     z-index: 40;
     border-radius: 20px;
- }
+}
 
  .message-container{
     width:90%;
- }
+}
 
- .message-title{
+.message-title{
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
- }
+}
 
  #message-title{
- 
-    font-size: 20px;
+     font-size: 20px;
  }
 
 
  .message-body{
     font-size: 14px;
     margin-bottom: 50px;
-    text-align: left;
+    text-align: center;
  }
 
  .top{
