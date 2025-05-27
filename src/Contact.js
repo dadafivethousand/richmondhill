@@ -38,7 +38,7 @@ export default function Contact() {
 
           <div className="contact-item">
             <FontAwesomeIcon icon={faInstagram} className="contact-icon" />
-            <a href="https://instagram.com/richmondhillbjj" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/rh_bjj" target="_blank" rel="noopener noreferrer">
               @rhbjj
             </a>
           </div>
