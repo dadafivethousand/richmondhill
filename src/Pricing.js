@@ -1,8 +1,12 @@
 import React from "react";
 import "./Stylesheets/GrandOpeningPricing.css";
 import StickerBadge from "./Components/StickerBadge";
+import { useAppContext } from "./AppContext";
 
-export default function GrandOpeningPricing() {
+
+export default function Pricing() {
+  const {setShowPurchaseForm} = useAppContext(); 
+
   return (
     <div id="Pricing" className="pricing-container">
      
@@ -16,7 +20,9 @@ export default function GrandOpeningPricing() {
             <p className="duration">1 Month</p>
             <p className="price">$140</p>
             <p className="access">Cancel Any Time</p>
-            <a href="https://buy.stripe.com/7sY28s2tN1L61Yj5B82oE04" className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
+            <div onClick={()=>setShowPurchaseForm(false)}>
+            <div href="https://buy.stripe.com/7sY28s2tN1L61Yj5B82oE04" className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</div>
+         </div>
           </div>
 
           <div className="price-tier">

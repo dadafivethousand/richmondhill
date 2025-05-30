@@ -16,15 +16,20 @@ export const AppProvider = ({ children }) => {
 
   // State to control form visibility
   const [showFreeTrialForm, setShowFreeTrialForm] = useState(() => getInitialState("showFreeTrialForm", false));
-   
+  const [showPurchaseForm, setShowPurchaseForm] = useState(() => getInitialState("showPurchaseForm", false));
+
   // Save states to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem("showFreeTrialForm", JSON.stringify(showFreeTrialForm));
   }, [showFreeTrialForm]);
+
+   useEffect(() => {
+    localStorage.setItem("showPurchaseForm", JSON.stringify(showPurchaseForm));
+  }, [showPurchaseForm]);
  
 
   return (
-    <AppContext.Provider value={{ showFreeTrialForm, setShowFreeTrialForm }}>
+    <AppContext.Provider value={{ showFreeTrialForm, setShowFreeTrialForm, showPurchaseForm, setShowPurchaseForm }}>
       {children}
     </AppContext.Provider>
   );

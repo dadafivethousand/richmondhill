@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { useAppContext } from "../AppContext";
 
 export default function GetStarted({size}){
-    const { showFreeTrialForm, setShowFreeTrialForm } = useAppContext();   
+    const { setShowFreeTrialForm } = useAppContext();   
+
     const [phrase, setPhrase] = useState("")
 
     useEffect(() => {

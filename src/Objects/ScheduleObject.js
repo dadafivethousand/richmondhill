@@ -7,9 +7,8 @@ const schedule = {
     ],
 
     Tuesday: [
-        { name: "Kids", start: 17.00, end: 18.00 },
-      { name: "Women's BJJ", start: 18.00, end: 19.00 },
-            { name: "BJJ No-Gi", start: 19.00, end: 20.00 },
+        { name: "Kids", start: 18.00, end: 19.00 },
+             { name: "BJJ No-Gi", start: 19.00, end: 20.00 },
              { name: "Open Mat", start: 20.00, end: 21.00 }
     ],
     Wednesday: [
