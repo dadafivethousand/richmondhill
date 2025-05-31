@@ -20,9 +20,9 @@ export default function Pricing() {
             <p className="duration">1 Month</p>
             <p className="price">$140</p>
             <p className="access">Cancel Any Time</p>
-            <div onClick={()=>setShowPurchaseForm(false)}>
+            
             <div href="https://buy.stripe.com/7sY28s2tN1L61Yj5B82oE04" className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</div>
-         </div>
+        
           </div>
 
           <div className="price-tier">
