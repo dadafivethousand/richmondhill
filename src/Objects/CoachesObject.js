@@ -3,7 +3,7 @@ import SivaImage from "../Media/IMG-20250515-WA0006.jpg"
 import AlexImage from "../Media/1000009270.jpg"
 import JessicaImage from "../Media/Maple Jiujitsu-10 (1).jpg"
 import ArturImage from "../Media/art.jpg" 
-
+import Ryan from "../Media/Ryan.png"
 const CoachesList = 
 [
 {
@@ -25,18 +25,6 @@ const CoachesList =
  
 } ,
 
-
-  {name: "Arthur",
-    belt:"Purple Belt",
-    accomplishments:[, "AJP Gold Medalist", "Next-Gen Gold Medalist", "Ontario Open Silver Medalist", "IBJJF London Open Bronze Medalist", "ADCC Canada 4th place", "Godai Open Bronze Medallist"],
-    description: "A purple belt in Brazilian Jiu-Jitsu, Arthur has been training for 4.5 years and has already made a name for himself in competition. He has won gold at the AJP and Next-Gen tournaments, secured a silver medal at the Ontario Open, and earned a bronze at the IBJJF London Open. Additionally, he placed fourth at ADCC Canada and took bronze at the Godai Open.",
-    image:ArturImage,
-    link: 'https://www.instagram.com/cucarachinho',
-    setmoreLink: 'https://maplejiujitsu.setmore.com/arthur-li'
-
-  },
-
-
 {
   name: "Jessica",
  description: "Jessica is a passionate and dedicated instructor who leads both our kids and women’s programs with energy and care. As a Brazilian Jiu-Jitsu blue belt, she brings a strong technical foundation and a focus on creating a supportive, empowering environment for all students. Her commitment to growth—both on and off the mats—makes her a valuable mentor, especially for those just starting their martial arts journey.",
@@ -52,6 +40,15 @@ const CoachesList =
  description: "Coach Alex is a versatile and accomplished martial artist who brings a dynamic blend of skills to the mats. He is the 2025 Ontario Open Champion and combines his Brazilian Jiu-Jitsu expertise with a solid foundation in wrestling and competitive Muay Thai. His well-rounded background and relentless competitive spirit make him a powerful presence both as a coach and a teammate.",
   accomplishments:["30+ Years of Wrestling",  "Donetsk Regional Champion", "Greco-Roman Wrestling Master of Sport (Ukraine)", " Head Coach of Thailand's National Wrestling Team" ,"Cadets Competition Winner", "United World Wrestling Certified Coach"],
   image:AlexImage,
+  link: 'https://www.instagram.com/alex.barsoum/',
+ 
+} ,
+
+{
+  name: "Ryan",
+  description: "Ryan is a skilled Muay Thai practitioner and a Provincial Amateur Muay Thai Champion. With years of dedicated training, he brings a sharp technical striking game and fight-tested experience. His ability to break down techniques and adapt them for students of all levels makes him a valuable resource for anyone looking to improve their striking or prepare for competition.",
+  accomplishments:["30+ Years of Wrestling",  "Donetsk Regional Champion", "Greco-Roman Wrestling Master of Sport (Ukraine)", " Head Coach of Thailand's National Wrestling Team" ,"Cadets Competition Winner", "United World Wrestling Certified Coach"],
+  image:Ryan,
   link: 'https://www.instagram.com/alex.barsoum/',
  
 } 
