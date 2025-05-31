@@ -36,7 +36,7 @@ export default function Pricing() {
             <p className="duration">1 Year</p>
             <p className="price">$1500</p>
             <p className="access">Installment Options Available!</p>
-            <a href="https://buy.stripe.com/14A00kgkD75q8mHbZw2oE05" className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
+            <a href="https://buy.stripe.com/8x214o2tNexSbyTd3A2oE0a" className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
           </div>
         </div>
 
