@@ -96,7 +96,7 @@
 .form-container p {
     margin-bottom: 20px;
     font-size: 13px;
-    font-family: poppins;
+    font-family: roboto condensed;
 }
 
 
@@ -141,7 +141,10 @@ text-decoration: underline;
     border-radius: 5px;
     box-shadow: 3px 3px 5px black;
     border: 1px solid white;
+}
 
+.message-body .message-title {
+    font-family: roboto condensed;
 }
 
 .no-shadow{
