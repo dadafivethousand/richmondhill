@@ -1,6 +1,6 @@
 import MaxImage from '../Media/maxim.jpg'
 import SivaImage from "../Media/IMG-20250515-WA0006.jpg"
-import AlexImage from "../Media/IMG_2461.heic"
+import AlexImage from "../Media/20250504_155933.jpg"
 import JessicaImage from "../Media/Maple Jiujitsu-10 (1).jpg"
 import ArturImage from "../Media/art.jpg" 
 import Ryan from "../Media/Ryan.png"
