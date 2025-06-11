@@ -68,8 +68,8 @@ export default function Navbar() {
     <FontAwesomeIcon icon={faEnvelope} /> info@rhbjj.com
   </a>
  */}
-  <a href="tel:+16478879940">
-    <FontAwesomeIcon icon={faPhone} /> (647) 887-9940
+  <a href="tel:+14169921169">
+    <FontAwesomeIcon icon={faPhone} /> (416) 992-1169
   </a>
 {/*
   <a
