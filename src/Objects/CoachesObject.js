@@ -1,6 +1,6 @@
 import MaxImage from '../Media/maxim.jpg'
 import SivaImage from "../Media/IMG-20250515-WA0006.jpg"
-import AlexImage from "../Media/1000009270.jpg"
+import AlexImage from "../Media/IMG_2461.heic"
 import JessicaImage from "../Media/Maple Jiujitsu-10 (1).jpg"
 import ArturImage from "../Media/art.jpg" 
 import Ryan from "../Media/Ryan.png"
@@ -45,11 +45,11 @@ const CoachesList =
 } ,
 
 {
-  name: "Ryan",
-  description: "Ryan is a skilled Muay Thai practitioner and a Provincial Amateur Muay Thai Champion. With years of dedicated training, he brings a sharp technical striking game and fight-tested experience. His ability to break down techniques and adapt them for students of all levels makes him a valuable resource for anyone looking to improve their striking or prepare for competition.",
+  name: "Artur",
+  description: "A purple belt in Brazilian Jiu-Jitsu, Arthur has been training for 4.5 years and has already made a name for himself in competition. He has won gold at the AJP and Next-Gen tournaments, secured a silver medal at the Ontario Open, and earned a bronze at the IBJJF London Open. Additionally, he placed fourth at ADCC Canada and took bronze at the Godai Open.",
   accomplishments:["30+ Years of Wrestling",  "Donetsk Regional Champion", "Greco-Roman Wrestling Master of Sport (Ukraine)", " Head Coach of Thailand's National Wrestling Team" ,"Cadets Competition Winner", "United World Wrestling Certified Coach"],
-  image:Ryan,
-  link: 'https://www.instagram.com/alex.barsoum/',
+  image:ArturImage,
+  link: 'https://www.instagram.com/cucarachinho/',
  
 } 
 

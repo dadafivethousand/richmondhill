@@ -16,7 +16,7 @@ export default function Contact() {
 
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-            <a href="tel:+16478879940">+1 (647) 887-9940</a>
+            <a href="tel:+14169921169">+1 (416) 992-1169</a>
           </div>
 
           <div className="contact-item">
