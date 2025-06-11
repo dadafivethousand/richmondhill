@@ -3,8 +3,8 @@ import video from "../src/Media/final.mp4";
 import webmvideo from "../src/Media/output.webm";
 import React, { useState, useEffect } from "react";
 import GetStarted from './Components/GetStarted';
-import landscapePoster from "./Media/png/logo-no-background.png"
-import rotated from "./Media/png/logo-no-background.png"
+import landscapePoster from "./Media/rhbjj.jpeg"
+import rotated from "./Media/rhbjj.jpeg"
 import landingImage from "./Media/DSC_7821.JPG"
 
 export default function Landing() {
