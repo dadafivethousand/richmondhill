@@ -29,8 +29,8 @@ const schedule = {
        
       
            
-   { name: "MMA", start: 19.00, end: 20.00 },
-            { name: "BJJ NoGi", start: 18.00, end: 19.00 },
+   { name: "MMA", start: 18.00, end: 19.00 },
+            { name: "BJJ NoGi", start: 19.00, end: 20.00 },
           
              { name: "Open Mat", start: 20.00, end: 21.00 }
    
