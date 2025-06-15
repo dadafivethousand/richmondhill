@@ -39,9 +39,9 @@ export default function Pricing() {
             <p className="duration">{option.duration} {option.duration > 1 ? "Months": "Month"}</p>
             <p className="price">{formatCurrency(option.price)}</p>
             <p className="access">{option.cancel ? option.cancel : "Installment Options Available"}</p>
-            
-            <a href= {option.paymentLink} className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
-        
+            <div onClick={()=>setShowPurchaseForm(true)}>
+            <div href= {option.paymentLink} className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</div>
+        </div>
           </div>
                 
                 );

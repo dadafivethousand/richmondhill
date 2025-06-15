@@ -14,7 +14,7 @@ import LeadForm from './Components/LeadForm';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Discount from './Discount';
 import Pricing from './Pricing';
-import PurchaseForm from './Components/PurchaseForm';
+import AdultPurchase from './Components/AdultPurchase';
  
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <div>
 
 {showFreeTrialForm && <LeadForm closebutton={true}/>}
-{showPurchaseForm && <PurchaseForm />}
+{showPurchaseForm && <AdultPurchase />}
        <Routes>
 
         <Route 
@@ -45,7 +45,9 @@ function App() {
 <Landing />
  <Coaches />
 <Schedule />
+{/* 
 <Pricing />
+*/}
 <FAQ />
 <Contact />
 <Footer />

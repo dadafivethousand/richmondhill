@@ -1,0 +1,58 @@
+
+.purchase-outer-container{
+    position: fixed;
+    background-color: white;
+    width:300px;
+    margin: 0 auto;
+  
+    left:0;
+    width: 70vw;
+    height:70vh;
+    z-index: 50;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius:20px;
+    border:1px solid black;
+    
+}
+
+.purchase-img{
+    width:200px;
+    margin-top:40px
+}
+
+
+.purchase-container{
+     width: 50vw;
+     margin: 0 auto;
+}
+
+.purchase-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-form-container form{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captcha-container{
+    margin: 0 10px;
+}
+
+.submit-btn{
+        background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    margin: 10px auto;
+    text-align: center;
+    width: 150px;
+}
