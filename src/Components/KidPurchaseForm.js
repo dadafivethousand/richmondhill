@@ -5,11 +5,15 @@ import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useAppContext } from "../AppContext";
 import pic from '../Media/png/logo-no-background.png'
+import KidSection from './KidSection';
+
+//shares the AdultPurchase.css file
   
-export default function AdultPurchase() {
+export default function KidPurchase() {
   const {setShowPurchaseForm, showPurchaseForm, setSelectionArray, selectionArray, priceObject, formatCurrency} = useAppContext()
-  const optionIndex = selectionArray[1]
+const optionIndex = selectionArray[1]
  const purchasingHigherIndex=selectionArray[0]
+  console.log('hi', optionIndex)
    const [captchaVerified, setCaptchaVerified] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -24,6 +28,7 @@ export default function AdultPurchase() {
   
   const [message, setMessage] = useState(null); // To display success/error messages
   const [isValid, setIsValid] = useState(false); // To track if the form is valid
+  const [kidsFormData, setKidsFormData] = useState([{ firstName: '', lastName: '', dob: '' }]);
 
   const cancelPurchase = () => {
     setShowPurchaseForm(false)
@@ -95,10 +100,11 @@ export default function AdultPurchase() {
       const submissionData = {
         ...formData,
         phone: formData.phone.replace(/\D/g, ''), // Send only digits
+         kids: kidsFormData, // Add kidsFormData to request body
         optionIndex:selectionArray[1],
           purchasingHigherIndex:selectionArray[0],
        };
-      const endpoint = `https://richmondhill-worker.maxli5004.workers.dev/adult_subscription`;
+      const endpoint = `https://richmondhill-worker.maxli5004.workers.dev/kid_subscription`;
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
@@ -112,6 +118,7 @@ export default function AdultPurchase() {
         const { url } = await response.json(); // Stripe Checkout URL
         window.location.href = url; // Redirect to Stripe Checkout
         setSelectionArray([])
+         setKidsFormData([{ firstName: '', lastName: '', dob: '' }]); 
         // Reset the form after a successful submission
         setFormData({
           firstName: '',
@@ -134,26 +141,19 @@ export default function AdultPurchase() {
       console.error('Error:', error);
     }
   };
- 
+
   return (
-    <div className='purchase-outermost-container'>
+    <div className="purchase-outermost-container">
     <div  className="purchase-outer-container">
           <div className="close-btn" onClick={() => cancelPurchase()}>
+     
                  <FontAwesomeIcon icon={faTimes} />
           </div>
     <div  className="purchase-container">
  
           <img className='purchase-img' src={pic} />
-    {
-      <div className="purchase-form-info">
-  <div className='purchase-form-info'>
-  {priceObject[purchasingHigherIndex].info[optionIndex].description}: {' '}
-    {formatCurrency(priceObject[purchasingHigherIndex].info[optionIndex].price)}  <span id='hst-portion'> {' '}  + HST</span>
-</div>
+    
 
-</div>
-    }
-        <h2>Student's Info</h2>
        
     <div  className="purchase-form-container">
 
@@ -167,9 +167,13 @@ export default function AdultPurchase() {
         </div>
       ) : (
         <>
-    
- 
-    
+    <div className='purchase-form-info'>
+<div className='purchase-form-info'>
+  {priceObject[purchasingHigherIndex].info[optionIndex].description} —{' '}
+  {formatCurrency(priceObject[purchasingHigherIndex].info[optionIndex].price )}  <span id='hst-portion'> {' '}  + HST</span>
+</div>
+         </div>
+          <h2>Parent's Info</h2>
        
 
            <form onSubmit={handleSubmit}>
@@ -223,7 +227,7 @@ export default function AdultPurchase() {
             </div>
             </div>
 
-        
+        <KidSection kidsFormData={kidsFormData} setKidsFormData={setKidsFormData} />
             
             {/* Google reCAPTCHA widget     */}
             <div className='captcha-container'>

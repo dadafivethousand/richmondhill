@@ -18,6 +18,7 @@ export const AppProvider = ({ children }) => {
   const [showFreeTrialForm, setShowFreeTrialForm] = useState(() => getInitialState("showFreeTrialForm", false));
   const [showPurchaseForm, setShowPurchaseForm] = useState(() => getInitialState("showPurchaseForm", false));
     const [priceObject, setPriceObject] = useState(null)
+    const [selectionArray, setSelectionArray] = useState([])
 
   // Save states to localStorage whenever they change
   useEffect(() => {
@@ -49,10 +50,20 @@ export const AppProvider = ({ children }) => {
 
 }, 
 []);
+
+const formatCurrency = (price) => {
+    const amount = Number(price);
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2, // Always show two decimal places
+      maximumFractionDigits: 2,
+    }).format(amount/100);
+  };
  
 
   return (
-    <AppContext.Provider value={{ priceObject, showFreeTrialForm, setShowFreeTrialForm, showPurchaseForm, setShowPurchaseForm }}>
+    <AppContext.Provider value={{ priceObject, formatCurrency, showFreeTrialForm, setShowFreeTrialForm, showPurchaseForm, setShowPurchaseForm, selectionArray, setSelectionArray }}>
       {children}
     </AppContext.Provider>
   );

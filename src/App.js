@@ -15,19 +15,24 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Discount from './Discount';
 import Pricing from './Pricing';
 import AdultPurchase from './Components/AdultPurchase';
+import KidPurchase from './Components/KidPurchaseForm';
+import SuccessPage from './Components/SuccessPage';
+import CancelPage from './Components/CancelPage';
  
 
 function App() {
-  const { showFreeTrialForm, showPurchaseForm  } = useAppContext();
+  const { showFreeTrialForm, showPurchaseForm, selectionArray  } = useAppContext();
   return (
   <Router>
     <div className="App">
       <div>
 
 {showFreeTrialForm && <LeadForm closebutton={true}/>}
-{showPurchaseForm && <AdultPurchase />}
+{selectionArray[0] === 0 && <AdultPurchase />}
+{selectionArray[0] === 1 && <KidPurchase/>}
        <Routes>
-
+            <Route path="/success" element={<SuccessPage />} />   
+            <Route path="/cancel" element={<CancelPage />} />   
         <Route 
         path="/volk"
         element={
@@ -45,9 +50,9 @@ function App() {
 <Landing />
  <Coaches />
 <Schedule />
-{/* 
+
 <Pricing />
-*/}
+
 <FAQ />
 <Contact />
 <Footer />

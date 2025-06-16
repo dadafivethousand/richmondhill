@@ -5,7 +5,7 @@ import { useAppContext } from "./AppContext";
  
 
 export default function Pricing() {
-  const {setShowPurchaseForm, priceObject} = useAppContext(); 
+  const {setShowPurchaseForm, priceObject, setSelectionArray} = useAppContext(); 
   const formatCurrency = (amount) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -15,6 +15,11 @@ export default function Pricing() {
     }).format(amount/100);
   };
 
+  const setSelect = (index, optionIndex) => {
+    setShowPurchaseForm(true)
+    setSelectionArray([index, optionIndex])
+
+  }
  
 
   return (
@@ -35,11 +40,11 @@ export default function Pricing() {
                
                 return (
                 // Check if the index is in displayArray
-                       <div className="price-tier">
+          <div className="price-tier">
             <p className="duration">{option.duration} {option.duration > 1 ? "Months": "Month"}</p>
             <p className="price">{formatCurrency(option.price)}</p>
             <p className="access">{option.cancel ? option.cancel : "Installment Options Available"}</p>
-            <div onClick={()=>setShowPurchaseForm(true)}>
+            <div onClick={()=>setSelect(index, optionIndex) }>
             <div href= {option.paymentLink} className="pay-btn" target="_blank" rel="noopener noreferrer">Get Started</div>
         </div>
           </div>

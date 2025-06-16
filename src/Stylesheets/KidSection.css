@@ -1,0 +1,136 @@
+  .kids-form-container {
+ 
+    margin-top:20px;
+ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 40;
+ 
+    overflow: scroll;
+  }
+
+ 
+  
+  .kids-form-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  
+  }
+  
+.kids-form{
+    display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+
+
+  .kids-form-group {
+    width: 100%;
+  }
+  
+  .kids-form-input {
+ 
+ 
+    border: 1px solid #ccc;
+    width:120px;
+ 
+  }
+  
+  .input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:20px;
+     margin-bottom:10px;
+ 
+  }
+
+  .kids-form-submit-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+
+  }
+
+  #kids-form-add-button
+  {
+    margin-top: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 70px;;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .kids-form-add-button:hover,
+  .kids-form-submit-button:hover {
+    background-color: #333;
+  }
+  
+  #kids-form-remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60px;;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+
+
+
+
+ 
+
+.kids-form-dob {
+   display: flex;
+ 
+}
+ 
+.parent-email-container{
+margin-top:30px
+}
+
+
+
+.kids-form-dob p{
+margin-bottom: 0;
+    font-size: 11px;
+ 
+ }
+
+ .kids-form-input[type="date"] {
+    appearance: none; /* Removes the calendar icon */
+    -webkit-appearance: none; /* Removes the calendar icon in WebKit browsers */
+    -moz-appearance: textfield; /* Ensures consistency in Firefox */
+
+  }
+  
+ 
+
+  .kids-form-remove-button:hover {
+    background-color: darkred;
+  }
+  
+  .kids-form-close {
+   
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+
+  .pic {
+    height: 150px
+  }

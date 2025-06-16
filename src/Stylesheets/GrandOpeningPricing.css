@@ -100,6 +100,7 @@
 
 .pay-btn:hover {
   background: #333;
+  cursor: pointer;
 }
 
 .start-trial-button {
@@ -138,3 +139,4 @@
  
 }
 }
+
